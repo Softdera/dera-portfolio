@@ -24,7 +24,7 @@
   <style scoped>
   section {
     padding: 20px;
-    text-align: center;
+    text-align: left;
     margin-top: 50px;
 
   }
@@ -45,6 +45,8 @@
 
   h2{
     color: gold;
+    text-align: center;
+
   }
   </style>
   

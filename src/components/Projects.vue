@@ -13,6 +13,8 @@
               :alt="project.title"
               class="cropped-image"
             />
+            <img v-lazy="project.image" :alt="project.title" class="cropped-image" />
+
 
           <h3>{{ project.title }}</h3>
           <p>Description: {{ project.description }}</p>

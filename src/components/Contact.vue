@@ -1,7 +1,9 @@
 <template>
     <section>
       <h2>Contact Me</h2>
-      <p class="excited">If you are excited about Software technologies and want to share ideas, seek collaboration or give me your project to develop.
+      <p class="excited">If you are excited about <b>software technologies</b> 
+        and want to share ideas, seek collaboration, give me your project to develop or 
+        simply to make inquiries.
         <br> You can reach me via:
       </p>
       <p>
