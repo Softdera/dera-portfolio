@@ -1,14 +1,14 @@
 <!-- src/components/Home.vue -->
 <template>
     <section>
-        <p class="hello"><strong><em>Hello to you 👋🏻</em></strong></p>
+        <p class="hello"><strong><em>Hello World 👋🏻</em></strong></p>
       <h1> I am Chiekwena Emmanuel Chidera, <br>
          a Frontend Developer & an AI/Automation Developer.</h1>
-         <img src="@/assets/soft.jpg" alt="User" class="userImg">
+         <img src="@/assets/image2.png" alt="User" class="userImg">
          <p><strong><em>Welcome to my Page</em></strong></p>
 
 
-      <button><router-link to="/contact">Contact Me</router-link></button>
+      <button><a href="#contact" @click="closeMenu">Contact Me</a></button>
     </section>
   </template>
   
@@ -44,8 +44,8 @@
 
   .userImg{
     border-radius: 20px;
-    height: 250px;
-    width: 200px;
+    height: 450px;
+    width: 300px;
   }
 
   .hello{

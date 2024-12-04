@@ -2,9 +2,18 @@
 <template>
     <section>
       <h2>My Projects</h2>
+      <p style="color: #fff;">A few of my projects include;</p>
+
       <div class="projects">
         <div v-for="(project, index) in projects" :key="index" class="project">
           <!--img :src="project.image" :alt="project.title" /-->
+          <img
+              v-if="project.image"
+              :src="project.image"
+              :alt="project.title"
+              class="cropped-image"
+            />
+
           <h3>{{ project.title }}</h3>
           <p>Description: {{ project.description }}</p>
           <p>Technologies Used: {{ project.technologies }} </p>
@@ -21,12 +30,23 @@
     data() {
       return {
         projects: [
+        {
+            title: 'VoteDeck Project App',
+            description: 'A project with multiple developers, the website is for fashion contestants, from their registration through to the final round of the competition',
+            technologies: 'HTML, CSS, JavaScript, Vue.js, TailWind CSS.',
+            image: require('@/assets/ProjectImage copy/VoteDeck Small.jpeg') 
+
+
+          },
           {
             title: 'Product Web App',
             description: 'A website to showcase an array of products.',
             technologies: 'HTML, CSS, JavaScript, Vue.js.',
             GithubLink: 'https://github.com/Softdera/myProductApp',
-            VercelLink: 'my-product-app.vercel.app'
+            VercelLink: 'https://my-product-app.vercel.app',
+            image: require('@/assets/ProjectImage copy/product Small.jpeg') 
+
+
           },
 
           {
@@ -34,7 +54,10 @@
             description: 'A company’s website designed majorly for larger screens.',
             technologies: 'HTML, CSS, JavaScript, Vue.js, Bootstrap, Figma.',
             GithubLink: 'https://github.com/Softdera/designP',
-            VercelLink: 'design-p-xi.vercel.app' },
+            VercelLink: 'https://design-p-xi.vercel.app',
+            image: require('@/assets/ProjectImage copy/Design Small.jpeg') 
+
+          },
 
             {
             title: 'Health AI Chatbot',
@@ -48,7 +71,9 @@
             description: 'A simple React App showing a company’s DashBoard.',
             technologies: 'React.js, CSS, HTML, JavaScrip, Bootstrap, Figma.',
             GithubLink: 'https://github.com/Softdera/react-dashboard-prototype',
-            VercelLink: 'react-dashboard-prototype.vercel.app'
+            VercelLink: 'https://react-dashboard-prototype.vercel.app',
+            image: require('@/assets/ProjectImage copy/Dashboard Small.jpeg') 
+
           },
 
           {
@@ -56,7 +81,9 @@
             description: 'A simple Bank app that can perform basic Bank operations such as transfers from one account to another, adding new accounts, records the transaction carried out by individual accounts as well as total transactions made by the customers in the said bank etc',
             technologies: 'Vue.js, CSS, HTML, JavaScript, Bootstrap.',
             GithubLink: 'https://github.com/Softdera/BankAppUpdated',
-            VercelLink: 'bank-app-updated-mvl2.vercel.app'
+            VercelLink: 'https://bank-app-updated-mvl2.vercel.app',
+            image: require('@/assets/ProjectImage copy/BankApp Small.jpeg') 
+
           },
 
           {
@@ -64,7 +91,14 @@
             description: 'A simple list app to manage the information of staff in a company.',
             technologies: 'Vue.js, CSS, HTML, JavaScript, Bootstrap.',
             GithubLink: 'https://github.com/Softdera/ContactList',
-            VercelLink: 'contact-list-zubr.vercel.app'
+            VercelLink: 'https://contact-list-zubr.vercel.app'
+          },
+          {
+            title: 'DHIS2',
+            description: 'A simple developed design of a Dhis2 mockup design alongside the basic functionalities',
+            technologies: 'Vue.js, CSS, HTML, JavaScript, Bootstrap.',
+            image: require('@/assets/ProjectImage copy/Dhis2 Small.jpeg') 
+
           },
 
           {
@@ -72,7 +106,7 @@
             description: 'A simple highchart project where data was pulled from firebase realtime database and saved in the local storage.',
             technologies: 'Vue.js, CSS, HTML, JavaScript, Firebase, Bootstrap.',
             GithubLink: 'https://github.com/Softdera/Practice',
-            VercelLink: 'practice-lime-theta.vercel.app'
+            VercelLink: 'https://practice-lime-theta.vercel.app/#/',
           },
 
         
@@ -108,6 +142,20 @@
     max-width: 100%;
     border-radius: 10px;
   }
+  .project img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.cropped-image {
+  width: 100%;
+  height: auto; 
+  position: relative;
+  clip-path: inset(10px 0 0 0); 
+}
+
 
   h2{
     color: gold;

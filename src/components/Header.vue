@@ -7,18 +7,17 @@
           <span></span>
         </div>
         <div class="name">
-          <span><strong class="Emmanuel" style="color: gold;">
-            Emmanuel</strong></span>
+          <span><strong class="Emmanuel" style="color: gold; ;">Emmanuel</strong></span>
         </div>
       </div>
       <span class="nav">
         <nav>
           <ul :class="{ 'nav-links': true, active: isMenuActive }">
-            <li><router-link to="/">Home</router-link></li>
-            <li><router-link to="/about">About</router-link></li>
-            <li><router-link to="/projects">Projects</router-link></li>
-            <li><router-link to="/skills">Skills</router-link></li>
-            <li><router-link to="/contact">Contact</router-link></li>
+            <li><a href="#home" @click="closeMenu">Home</a></li>
+            <li><a href="#about" @click="closeMenu">About</a></li>
+            <li><a href="#projects" @click="closeMenu">Projects</a></li>
+            <li><a href="#skills" @click="closeMenu">Skills</a></li>
+            <li><a href="#contact" @click="closeMenu">Contact</a></li>
           </ul>
         </nav>
       </span>
@@ -37,27 +36,30 @@
       toggleMenu() {
         this.isMenuActive = !this.isMenuActive;
       },
+      closeMenu() {
+        this.isMenuActive = false; // Close menu after clicking an item
+      },
     },
   };
   </script>
   
   <style scoped>
-  /* Reset to ensure no spacing above the header */
   html,
   body {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth; /* Enable smooth scrolling */
   }
   
   header {
     background: #023e8a;
     color: #fff;
     padding: 10px 20px;
-    position: fixed; /* Navbar sticks to the top */
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%; /* Full width */
-    z-index: 1000; /* Ensure it stays above other content */
+    width: 100%;
+    z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
@@ -68,12 +70,7 @@
   }
   
   .name {
-    display: none; /* Hidden by default */
-  }
-  
-  .name span {
-    font-size: 16px;
-    line-height: 1.2;
+    display: none;
   }
   
   nav ul {
@@ -91,15 +88,15 @@
   nav ul li a {
     color: #fff;
     text-decoration: none;
+    cursor: pointer;
   }
   
   .menu-toggle {
     display: none;
     cursor: pointer;
-    font-size: 24px;
     position: absolute;
     top: 15px;
-    left: 20px; /* Align the menu toggle to the left */
+    left: 20px;
   }
   
   .menu-toggle span {
@@ -114,17 +111,21 @@
     display: flex;
   }
   
-  /* Responsive styles for smaller screens */
   @media (max-width: 768px) {
     .menu-toggle {
-      display: block; /* Show the menu toggle */
+      display: block;
     }
   
     .name {
-      display: flex; /* Show only on smaller screens */
+      display: flex;
       flex-direction: column;
       align-items: center;
       margin-top: 10px;
+      position: absolute;
+      right: 60px;
+      font-style: italic;
+      font-size: small;
+      top: 15px;
     }
   
     .nav-links {
@@ -147,10 +148,6 @@
       text-align: center;
     }
 
-    .Emmanuel{
-        position: absolute;
-        right: 50px;
-    }
   }
   </style>
   
