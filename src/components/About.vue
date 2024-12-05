@@ -42,10 +42,10 @@
                 <h5>2024 - Present</h5>  
                 <p> Part of a team of developers working on the development of a fashion contestants website called VoteDeck. Have led in the frontend development of multiple webpages, resulting in an increase of speed of development by 45%. Some of the technologies used include Vue.js, Git, GitHub, JavaScript, HTML5, CSS3, TailWind CSS and more</p>
             </li>
-            <li>
+            <!--li>
                 <h3>Frontend Developer</h3>
                 <p>GFAMS Project, 2024</p>
-            </li>
+            </li-->
             <h3>Netwalkers Ltd</h3>
                 <h4 style="color: white;">Frontend Intern</h4>
                 <h5>2024 </h5>

@@ -2,7 +2,7 @@
 <template>
     <section>
       <h2>My Projects</h2>
-      <p style="color: #fff;">A few of my projects include;</p>
+      <p style="color: #fff;">A few of my projects include:</p>
 
       <div class="projects">
         <div v-for="(project, index) in projects" :key="index" class="project">
@@ -172,14 +172,16 @@
 }
 
 .project {
-  border: 1px solid gold;
+  border: 1px solid #ccc;
   border-radius: 10px;
   padding: 10px;
   text-align: center;
-  background-color: #333; 
-  flex: 1 1 300px; 
-  max-width: 400px; 
-  box-sizing: border-box; 
+  background-color: #333; /* Optional for better visuals */
+  flex: 1 1 300px; /* Ensures consistent width with flexibility */
+  max-width: 400px; /* Restricts maximum width */
+  box-sizing: border-box; /* Ensures padding is included in width */
+  word-wrap: break-word; /* Break long words */
+  overflow-wrap: break-word; /* Ensures wrapping in modern browsers */
 }
 
 .project img {
@@ -189,6 +191,21 @@
   margin-bottom: 10px;
 }
 
+.project a {
+  color: #00f; /* Link color */
+  text-decoration: none;
+  word-wrap: break-word; /* Break long URLs */
+  overflow-wrap: break-word; /* Ensures wrapping for URLs */
+  display: inline-block; /* Ensures proper wrapping inside flex containers */
+  max-width: 100%; /* Prevents overflowing the container */
+  overflow: hidden; /* Hides any potential overflow */
+  text-overflow: ellipsis; /* Adds ellipsis for long links */
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
 .cropped-image {
   width: 100%;
   height: auto;
@@ -196,16 +213,28 @@
   clip-path: inset(10px 0 0 0);
 }
 
+/* Small Screen Styles */
 @media (max-width: 600px) {
   .projects {
-    gap: 10px; 
+    gap: 10px; /* Reduce spacing for smaller screens */
   }
   .project {
-    flex: none; 
-    width: 90%; 
-    max-width: none; 
-    margin: 0 auto; 
+    flex: none; /* Prevent flex resizing */
+    width: 90%; /* Set a consistent width for all items */
+    max-width: none; /* Remove the max-width restriction */
+    margin: 0 auto; /* Center items */
+  }
+  .project p,
+  .project a {
+    font-size: 14px; /* Reduce font size for smaller screens */
+    overflow-wrap: break-word; /* Ensure wrapping for long words/links */
+    word-break: break-word; /* Ensure wrapping in older browsers */
+    line-break: anywhere; /* Allow breaking links at any character */
+    text-align: justify; /* Align text for better readability */
+  }
+  .project a {
+    text-overflow: ellipsis; /* Adds ellipsis for links */
+    white-space: normal; /* Prevent links from forcing single-line display */
+  }
 }
-}
-
 </style>
