@@ -137,7 +137,7 @@
     padding: 10px;
     width: 400px;
     text-align: center;
-    width: 25.13rem;
+    max-width: 25.13rem;
 
   }
   
