@@ -131,7 +131,7 @@
   }
   
   .project {
-    border: 1px solid #ccc;
+    border: 1px solid gold;
     border-radius: 10px;
     margin: 10px;
     padding: 10px;
@@ -163,6 +163,49 @@
   h2{
     color: gold;
   }
+  .projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Space between items */
+  color: #fff;
+}
 
-  </style>
-  
+.project {
+  border: 1px solid gold;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  background-color: #333; 
+  flex: 1 1 300px; 
+  max-width: 400px; 
+  box-sizing: border-box; 
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.cropped-image {
+  width: 100%;
+  height: auto;
+  position: relative;
+  clip-path: inset(10px 0 0 0);
+}
+
+@media (max-width: 600px) {
+  .projects {
+    gap: 10px; 
+  }
+  .project {
+    flex: none; 
+    width: 90%; 
+    max-width: none; 
+    margin: 0 auto; 
+}
+}
+
+</style>
