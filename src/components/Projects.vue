@@ -180,8 +180,6 @@
   flex: 1 1 300px; /* Ensures consistent width with flexibility */
   max-width: 400px; /* Restricts maximum width */
   box-sizing: border-box; /* Ensures padding is included in width */
-  word-wrap: break-word; /* Break long words */
-  overflow-wrap: break-word; /* Ensures wrapping in modern browsers */
 }
 
 .project img {
@@ -192,7 +190,7 @@
 }
 
 .project a {
-  color: #00f; /* Link color */
+  font-weight: bold;
   text-decoration: none;
   word-wrap: break-word; /* Break long URLs */
   overflow-wrap: break-word; /* Ensures wrapping for URLs */
@@ -224,15 +222,9 @@
     max-width: none; /* Remove the max-width restriction */
     margin: 0 auto; /* Center items */
   }
-  .project p,
+  
   .project a {
-    font-size: 14px; /* Reduce font size for smaller screens */
-    overflow-wrap: break-word; /* Ensure wrapping for long words/links */
-    word-break: break-word; /* Ensure wrapping in older browsers */
-    line-break: anywhere; /* Allow breaking links at any character */
-    text-align: justify; /* Align text for better readability */
-  }
-  .project a {
+    font-weight: bold;
     text-overflow: ellipsis; /* Adds ellipsis for links */
     white-space: normal; /* Prevent links from forcing single-line display */
   }
