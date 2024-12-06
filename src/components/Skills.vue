@@ -14,7 +14,7 @@
     data() {
       return {
         skills: ['HTML', 'CSS', 'JavaScript', 'Vue.js', 'Git', 'GitHub', 'React.js', 'AI', 'Automation tools', 'RPA tools', 'TypeScript',
-            'TailWind CSS', 'Material UI', 'Next.js', 'Prompt Engineering', 'Bot Building', 'LLM Models', 'Active Pieces', 'Zapier', 'Flowise', 'and More'
+            'TailWind CSS', 'Material UI', 'Next.js', 'Prompt Engineering', 'Bot Building', 'LLMs', 'Active Pieces', 'Zapier', 'Flowise', 'and More'
         ]
       }
     }
@@ -25,7 +25,7 @@
   section {
     padding: 20px;
     text-align: left;
-    margin-top: 50px;
+    margin-top: 35px;
 
   }
   

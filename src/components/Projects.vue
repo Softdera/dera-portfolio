@@ -119,7 +119,7 @@
   
   <style scoped>
   section{
-    margin-top: 50px;
+    margin-top: 35px;
 
   }
   .projects {

@@ -14,6 +14,10 @@
                 <p>AI Career Essentials, 2024</p>
             </li>
             <li>
+                <h3>Cisco Networking Academy</h3>
+                <p>Network Support and Security, 2024</p>
+            </li>
+            <li>
                 <h3>Udemy</h3>
                 <p>Web Development, 2023</p>
             </li>
@@ -65,7 +69,7 @@
   section {
     padding: 20px;
     text-align: left;
-    margin-top: 50px;
+    margin-top: 35px;
 
   }
 
