@@ -31,7 +31,7 @@
             </li-->
         </ul>
 
-        <h2 style="margin-top: 20px;">Recent Work Experience</h2>
+        <!--h2 style="margin-top: 20px;">Recent Work Experience</h2>
         <ul> 
             <li>
                 <h3> eHealth4everyone Ltd. </h3>
@@ -39,10 +39,12 @@
                  <h5>2024 - Present</h5>  
                 <p>No Code Chatbot Project: Led the development of building a no code Chatbot system, using zero code and a complete reliance on Artificial Intelligence technologies.
                    Leveraged on technologies such as Botpress, Chatbase and mostly Botsheet. 
-                   <!--span>With a 99% accuracy when responding to user quieries on a large dataset of over 50,000 rows. Created the SOP for the step by step process of creating a no code Chatbot using Botsheet from scratch as well as a Custom Prompt.</span--></p>
-                <p>Process Automation: Handled the automation of the HDA Milestone 3 process. <!--span>developedthe step by step automated process for scoring/validating the Milestone 3 submission for the Graduate Fellowship Grant. </span-->
+                   <span>With a 99% accuracy when responding to user quieries on a large dataset of over 50,000 rows. Created the SOP for the step by step process of creating a no code Chatbot using Botsheet from scratch as well as a Custom Prompt.</span></p>
+                <p>Process Automation: Handled the automation of the HDA Milestone 3 process. <span>developedthe step by step automated process for scoring/validating the Milestone 3 submission for the Graduate Fellowship Grant. </span>
                   Leveraged on AI tools such as Active Pieces to handle the automation flow, Paper Forms, Custom Code, Ollama3, Straico AI, a Custom Prompt and more.
-                 <!--span>  Developed a Custom Prompt for evaluating dynamically the Milestone submitted by the HDA Fellows against a predefined methodology and criteria. Developed a Custom Prompt that carries out these evaluation with an accuracy rate of over 95%. Thus, easing the process for the HDA Committee.</span-->
+                 <span>  Developed a Custom Prompt for evaluating dynamically the Milestone submitted by the HDA Fellows against a predefined methodology and criteria. 
+                  Developed a Custom Prompt that carries out these evaluation with an accuracy rate of over 95%. 
+                  Thus, easing the process for the HDA Committee.</span>
                    </p>
               </li>
             <li>
@@ -59,8 +61,8 @@
                 <h4 style="color: white;">Frontend Intern</h4>
                 <h5>2024 </h5>
                 <p>Handled the frontend development of a Healthcare system website for a hospital,
-                   adding functionalities using JavaScript, making it responsive and more.</p-->
-        </ul>
+                   adding functionalities using JavaScript, making it responsive and more.</p>
+        </ul-->
       </div> 
     </section>
   </template>
