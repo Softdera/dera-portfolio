@@ -32,6 +32,16 @@
       return {
         projects: [
         {
+            title: 'React Note App',
+            description: 'A app for Notes creation.',
+            technologies: 'HTML, CSS, JavaScript, React.js, Bootstrap and more.',
+            GithubLink: 'https://github.com/Softdera/NotesApp',
+            VercelLink: 'https://notes-app-final-iota.vercel.app/',
+
+
+          },
+
+        {
             title: 'VoteDeck Project App',
             description: 'A project with multiple developers, the website is for fashion contestants, from their registration through to the final round of the competition',
             technologies: 'HTML, CSS, JavaScript, Vue.js, TailWind CSS.',
