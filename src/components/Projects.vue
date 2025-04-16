@@ -37,7 +37,7 @@
             technologies: 'HTML, CSS, JavaScript, React.js, Bootstrap and more.',
             GithubLink: 'https://github.com/Softdera/NotesApp',
             VercelLink: 'https://notes-app-final-iota.vercel.app/',
-
+            image: require('@/assets/ProjectImage copy/NOTES copy Small.jpeg') 
 
           },
 
