@@ -4,7 +4,7 @@
         <p class="hello"><strong><em>Hello World 👋🏻</em></strong></p>
       <h1> I am Chiekwena Emmanuel Chidera, <br>
          a Frontend Engineer & an AI/Automation Engineer.</h1>
-         <img src="@/assets/blue.jpg" alt="User" class="userImg">
+         <img src="@/assets/nnn.jpg" alt="User" class="userImg">
 
          <p><strong><em>Welcome to my Page</em></strong></p>
 
