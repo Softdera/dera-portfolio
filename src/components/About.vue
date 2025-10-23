@@ -8,7 +8,10 @@
 
         </p>
         <h2> Certifications</h2>
-        <ul> 
+        <ul> <li>
+                <h3>Flexisaf Limited</h3>
+                <p>Frontend Internship (Advanced), 2025</p>
+            </li>
             <li>
                 <h3>Alx Africa Admissions</h3>
                 <p>AI Career Essentials, 2024</p>
