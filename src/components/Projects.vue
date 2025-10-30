@@ -31,6 +31,16 @@
     data() {
       return {
         projects: [
+           {
+            title: 'React Dashboard',
+            description: 'A app that collects information from an API to populate the campaign pages.',
+            technologies: 'HTML, CSS, JavaScript, React.js, Bootstrap and more.',
+            GithubLink: 'https://github.com/Softdera/infinion',
+            VercelLink: 'https://infinion-l5qz.vercel.app/',
+            image: require('@/assets/ProjectImage copy/Dashboard.jpg') 
+
+          },
+
         {
             title: 'React Note App',
             description: 'A app for Notes creation.',
